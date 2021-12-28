@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>StuffAmon | Home</title>
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--Main-->
+		<div class="homepage">
+			<div class="logo"></div>
+			<form class="password__area">
+				<label for="pswd">Enter your password: </label>
+				<input class="password__box" type="password" id="pswd" placeholder="Hi, there!">
+				<input class="submit__button" type="button" value="Submit" onclick="checkPswd();" />
+			</form>
+		</div>
+
+		<script type="text/javascript">
+		    function checkPswd() {
+		        var confirmPassword = "monkay";
+		        var password = document.getElementById("pswd").value;
+		        if (password == confirmPassword) {
+		             window.location="homepage.html";
+		        }
+		        else{
+		            alert("Passwords do not match.");
+		        }
+		    }
+		</script>
+		<!--End Main-->
+	
+		<!--Footer-->
+		<div class="footer__container">
+			<p style="text-align: left;">All Cards Copyrighted. Don't try it.</p>
+			<p style="text-align: right;">Made by MtL</p>
+		</div>
+		<!--End Footer-->
+	</body>
+</hmtl>
